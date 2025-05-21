@@ -1,0 +1,158 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+.banner {
+  background: linear-gradient(transparent, black),
+    url("https://cdn.sega.co.uk/humankind-game/public/styles/1920/public/content/media/bg/image/KeyArt_Oceania_3840x2160%20%282%29.jpg?itok=arH0k1Z4");
+  background-position: center;
+  /* background-color: green; */
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.bannertext > img {
+  width: 600px;
+}
+
+.vid-wrap {
+  background-color: black;
+  display: flex;
+
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 0px;
+}
+.vid-kick {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.vid-kick > div {
+  width: 250px;
+  position: relative;
+}
+.video-text {
+  position: absolute;
+  top: 57%;
+  left: 23%;
+  text-align: center;
+}
+video {
+  height: 350px;
+  border-radius: 12px;
+}
+.vid-wrap > div > img {
+  width: 600px;
+}
+.video-text,
+.vid-p,
+.vid-h4 {
+  color: white;
+}
+
+.sec3 {
+  background-image: url("https://cdn.sega.co.uk/humankind-game/public/styles/1920/public/content/media/bg/image/quote_bg.jpg?VersionId=2IzWfl__bb0aWLepYifmyjgGnCUwRwRf&itok=h780UZuj");
+  height: 50vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.anim::after {
+  content: "HUMAN KIND IS A TRIPPLE-A GAME,  AND IT SHOWS";
+  animation-name: changing;
+  animation-duration: 8s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  color: white;
+  font-size: 30px;
+  opacity: 0.5;
+  transition: opacity;
+  transition-timing-function: ease-in-out;
+  transition-duration: 1;
+  transition-delay: 1s;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+@keyframes changing {
+  25% {
+    opacity: 1;
+
+
+    content: "GRAND HISTORICAL STRATEGY IS GETTING THE SHAKE-UP IT  DESERVES";
+  }
+  50% {
+    opacity: 0.5;
+
+    content: "AMPLITUDE IS CREATING  SOMETHING REALLT QUITE  EXCITING";
+  }
+  75% {
+    opacity: 1;
+    content: "JOIN THE JOURNEY TO THE STARS";
+  }
+  /* 100%{
+        opacity: 1;
+      
+    } */
+}
+
+/* breakpoint */
+@media screen and (max-width: 768px) {
+    
+}
+@media screen and (max-width: 425px) {
+  .banner {
+    background-position: left;
+  }
+  .bannertext > img {
+    width: 300px;
+  }
+  .vid-wrap > div > img {
+    width: 300px;
+  }
+  .anim::after {
+    font-size: 20px;
+  }
+
+  .vid-kick > div {
+    width: 400px;
+    position: relative;
+}
+  video {
+    height: 400px;
+    border-radius: 12px;
+  }
+}
+
+/* .navbar-expand-lg .offcanvas {
+  flex-grow: 0 !important;
+}
+
+.container-md{
+  justify-content: start !important;
+ 
+}
+
+.nav-link{
+  color: white !important;
+} */
+
+
